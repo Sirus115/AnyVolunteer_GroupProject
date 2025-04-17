@@ -11,7 +11,7 @@
         android:id="@+id/tvWelcome"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="你好，欢迎使用 AI 助手！"
+        android:text="Hello, I am your reliable privacy-protecting AI assistant!"
         android:textSize="24sp"
         android:textStyle="bold"
         android:textAlignment="center"
@@ -38,7 +38,7 @@
             android:id="@+id/etFirstMessage"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:hint="请输入你想说的话"
+            android:hint="Enter what you want to say!"
             android:inputType="text"
             android:layout_weight="1"
             android:layout_marginEnd="8dp"
@@ -51,7 +51,7 @@
             android:id="@+id/btnStartChat"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="开始对话"
+            android:text="Start"
             android:textColor="#FFFFFF"
             android:background="@drawable/bg_button_green" />
     </LinearLayout>

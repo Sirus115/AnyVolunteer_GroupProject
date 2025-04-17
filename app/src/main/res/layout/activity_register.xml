@@ -7,9 +7,9 @@
     android:background="#FAF8F8"
     android:padding="24dp">
 
-    <!-- 外层垂直容器：居中整个登录区域 -->
+    <!-- 外层垂直容器 -->
     <LinearLayout
-        android:id="@+id/containerLogin"
+        android:id="@+id/containerRegister"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:orientation="vertical"
@@ -19,12 +19,12 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent">
 
-        <!-- 欢迎标题 -->
+        <!-- 注册标题 -->
         <TextView
-            android:id="@+id/tvWelcome"
+            android:id="@+id/tvRegisterTitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Welcome"
+            android:text="Register"
             android:textSize="22sp"
             android:textColor="#000000"
             android:textStyle="normal"
@@ -40,6 +40,7 @@
             android:background="@drawable/bg_card"
             android:layout_marginBottom="24dp">
 
+            <!-- 用户名 -->
             <EditText
                 android:id="@+id/etUsername"
                 android:layout_width="match_parent"
@@ -51,10 +52,9 @@
                 android:textColor="#000000"
                 android:textColorHint="#888888" />
 
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="12dp" />
+            <View android:layout_width="match_parent" android:layout_height="12dp" />
 
+            <!-- 密码 -->
             <EditText
                 android:id="@+id/etPassword"
                 android:layout_width="match_parent"
@@ -65,36 +65,50 @@
                 android:padding="8dp"
                 android:textColor="#000000"
                 android:textColorHint="#888888" />
+
+            <View android:layout_width="match_parent" android:layout_height="12dp" />
+
+            <!-- 确认密码 -->
+            <EditText
+                android:id="@+id/etConfirmPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Confirm Password"
+                android:inputType="textPassword"
+                android:backgroundTint="#CCCCCC"
+                android:padding="8dp"
+                android:textColor="#000000"
+                android:textColorHint="#888888" />
         </LinearLayout>
 
-        <!-- 登录按钮 -->
+        <!-- 注册按钮 -->
         <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/btnLogin"
+            android:id="@+id/btnRegister"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Login"
+            android:text="Register"
             android:textColor="#FFFFFF"
             android:background="@drawable/bg_button_green"
             android:layout_marginBottom="16dp" />
 
-        <!-- 注册提示横向排列 -->
+        <!-- 返回登录提示 -->
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
 
             <TextView
-                android:id="@+id/tvRegister"
+                android:id="@+id/tvAlreadyHaveAccount"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Not registered yet? "
+                android:text="Already have an account? "
                 android:textColor="#666666" />
 
             <TextView
-                android:id="@+id/tvRegisterLink"
+                android:id="@+id/tvLoginLink"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Register"
+                android:text="Login"
                 android:textColor="#4CAF50"
                 android:textStyle="bold" />
         </LinearLayout>

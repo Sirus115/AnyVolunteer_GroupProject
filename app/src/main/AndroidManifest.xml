@@ -12,18 +12,19 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.GroupProject"
         tools:targetApi="31">
-
         <!-- 欢迎页现在是启动页 -->
         <activity
             android:name=".activity.WelcomeActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
-
-        <!-- 其他 Activity 保持不变 -->
+        </activity> <!-- 其他 Activity 保持不变 -->
+        <activity
+            android:name=".activity.RegisterActivity"
+            android:exported="false" />
         <activity
             android:name=".activity.ChatDetailActivity"
             android:exported="false" />
